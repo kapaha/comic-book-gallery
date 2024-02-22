@@ -5,9 +5,21 @@ namespace ComicBookGallery.Controllers
 {
 	public class ComicBooksController : Controller
 	{
-		public ActionResult Detail()
+		private ComicBookRepository _comicBookRepository = null;
+
+		public ComicBooksController()
 		{
-			var comicBook = GetComicBook();
+			_comicBookRepository = new ComicBookRepository();
+		}
+
+		public ActionResult Detail(int? id)
+		{
+			if (id == null)
+			{
+				return NotFound();
+			}
+
+			var comicBook = _comicBookRepository.GetComicBook(id.Value);
 
 			return View(comicBook);
 		}
