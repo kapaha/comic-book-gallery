@@ -1,4 +1,4 @@
-namespace ComicBookGallery.Modals
+namespace ComicBookGallery.Models
 {
     public class Artist
     {
