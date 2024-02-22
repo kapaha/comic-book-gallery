@@ -2,18 +2,18 @@
 
 namespace ComicBookGallery.Controllers
 {
-    public class ComicBooksController : Controller
-    {
-        public ActionResult Detail()
-        {
+	public class ComicBooksController : Controller
+	{
+		public ActionResult Detail()
+		{
 
-            return View();
-            //if (DateTime.Today.DayOfWeek == DayOfWeek.Monday)
-            //{
-            //    return Redirect("/");
-            //}
+			return View();
+			//if (DateTime.Today.DayOfWeek == DayOfWeek.Monday)
+			//{
+			//    return Redirect("/");
+			//}
 
-            //return Content("Hello from the comic books controller!");
-        }
-    }
+			//return Content("Hello from the comic books controller!");
+		}
+	}
 }
